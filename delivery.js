@@ -176,6 +176,8 @@ const delivery = (orders, deliveryExecutives) => {
        On the other hand, some might want to increase quality i.e prioritize order delay, equal distribution of orders among delivery boys
        This can be easily incorporated by changing the order of the algo.
        LEFTOVERALGO will be the final algorithm which will assign the left orders to delivery executives
+       There are different THRESHOLD . The idea is to use a particular a algorithm upto the specific THRESHOLD and then use another algorithm for rest of orders.
+       If there is some orders still left LEFTOVER algo can be used to accomodate it.
     */
 
     const result = fp.compose(
